@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal do Mundo - Saúde</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .nav {
+            background-color: #e74c3c;
+            overflow: hidden;
+            text-align: center;
+        }
+        .nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #c0392b;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar, .main {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            max-width: 200px;
+        }
+        .main {
+            flex: 2;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2, h3 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        form button:hover {
+            background-color: #c0392b;
+        }
+        .highlight {
+            border-top: 4px solid #c0392b;
+            padding-top: 10px;
+            margin-bottom: 20px;
+        }
+        .highlight img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Jornal do Mundo</h1>
+</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="Economia.html">Economia</a>
+    <a href="Saude.html">Saúde</a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Entrevistas</h2>
+        <ul>
+            <li>João Alves</li>
+<li>Fernanda Silva</li>
+<li>Rafael Costa</li>
+<li>Laura Martins</li>
+<li>Gustavo Ribeiro</li>
+<li>Aline Torres</li>
+<li>Pedro Vasconcelos</li>
+<li>Sofia Almeida</li>
+        </ul>
+        <h2>News</h2>
+        <form>
+            <input type="email" placeholder="E-mail">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <div class="main">
+        <div class="highlight">
+            <h2>Destaque</h2>
+            <h3>Gordura no fígado: como e por que a esteatose hepática se tornou uma epidemia global e preocupante</h3>
+            <img src="https://s2-g1.glbimg.com/Ba1ZfSk6EbUHBeHEUP7KjIBNTU0=/1080x608/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/f/C/E8EgJ7QkCIB81QBmQCYQ/fgado.png">
+            <p>Neste artigo, especialista destaca que fatores como obesidade, diabetes e hábitos alimentares inadequados contribuem para essa condição silenciosa, que pode levar a complicações graves, como cirrose e câncer. <a href="#">Leia mais!</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; Copyright 2000-2018 Notícias cidade
+</div>
+
+</body>
+</html>

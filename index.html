@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Cidade</title>
+    <link rel="stylesheet" href="styles.css ">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.nav {
+    background-color: #e74c3c;
+    overflow: hidden;
+    text-align: center;
+}
+.nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #c0392b;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.sidebar, .main, .aside {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+    flex: 1;
+    max-width: 200px;
+}
+.main {
+    flex: 2;
+}
+.aside {
+    flex: 1;
+}
+.footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.highlight {
+    border-top: 4px solid #c0392b;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+h2, h3 {
+    margin-top: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 5px 0;
+}
+form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+form button:hover {
+    background-color: #c0392b;
+}
+.news-section {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border-left: 8px solid #2c3e50;
+}
+.news-section img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+.news-section h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+}
+.news-section p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.news-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-left: 8px solid #34495e;
+}
+</style>
+<body>
+
+<div class="header">
+    <h1>Jornal do Mundo</h1>
+</div>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="Economia.html">Economia</a>
+    <a href="Saude.html">Saúde</a>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Entrevistas</h2>
+        <ul>
+            <li>José Almeida</li>
+            <li>Felipe Silva</li>
+            <li>Renato Rodrigues</li>
+            <li>Abelardo Silveira</li>
+            <li>André Carlos</li>
+            <li>Márcio Mello</li>
+            <li>João Pedro</li>
+            <li>Fernando Weiss</li>
+        </ul>
+        <h2>News</h2>
+        <form>
+            <input type="email" placeholder="E-mail">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <div class="main">
+        <div class="highlight">
+            <h2>Destaque</h2>
+            <h3>FAIXA DE GAZA</h3>
+            <img src="https://s2-g1.glbimg.com/Qcd9l1X-tswedHUL7N0izacTWdk=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/A/v/Nih4VrSFibnGBilfpTaw/2024-08-06t180924z-855405732-rc2esw9z072l-rtrmadp-3-israel-palestinians-hamas-chief.jpg">
+            <p>'Guerra ainda não acabou', diz Netanyahu após morte de Yahya Sinwar <a href="#">Leia mais!</a></p>
+        </div>
+    </div>
+
+    <div class="aside">
+        <div class="highlight">
+            <h2>Última Notícia</h2>
+            <h3>COREIAS</h3>
+            <img src="https://s2-g1.glbimg.com/qMarh7uKHPizq7NUyEmIbxZw36A=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/S/E/euhZNgQvaOZQAJ3jMJtw/2024-06-19t193618z-848069286-rc2he8acmkt0-rtrmadp-3-northkorea-russia.jpg" style="width: 300px; height: 150px ">
+            <p>Coreia do Norte muda Constituição e classifica Coreia do Sul como 'Estado hostil' <a href="#">Leia mais!</a></p>
+        </div>
+        <h2>Notícias recentes</h2>
+        <ul>
+            <li>
+                <h3>NO JORNAL DO MUNDO!</h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; Copyright 2000-2018 Notícias cidade
+</div>
+
+</body>
+</html>
